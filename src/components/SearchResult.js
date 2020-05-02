@@ -3,7 +3,6 @@ import axios from "axios";
 import Card from "./CreateCard";
 import Pagination from "./pagination/pagination";
 import "./SearchResult.css";
-import dummyData from "../data";
 const objectForCard = {
 	url: "www",
 	title:
