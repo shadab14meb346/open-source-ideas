@@ -3,6 +3,7 @@ import axios from "axios";
 import Card from "./CreateCard";
 import Pagination from "./pagination/pagination";
 import "./SearchResult.css";
+const TOKEN = process.env.REACT_APP_TOKEN;
 const objectForCard = {
 	url: "www",
 	title:
@@ -164,7 +165,7 @@ function SearchResults({
 						url,
 						headers: {
 							"Access-Control-Allow-Origin": "http://localhost:3000",
-							Authorization: "token 599a7284c15ea2e309bf291fdffcd75a2de2b0ad",
+							Authorization: `token ${TOKEN}`,
 							"Content-Type": "application/json",
 						},
 						data: {
