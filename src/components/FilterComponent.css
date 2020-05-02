@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  color: #FFFFFF;
+}
+
+.input-item label {
+  text-align: left;
+  margin: 5px;
+}
+
+.input-item button {
+  background-color: #FFFFFF;
+  margin-top: auto;
+  height: 30px;
+  width: 140px;
+  color: #11455D;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+}
+
+.input-item button:hover {
+  cursor: pointer;
+}
+
+.input select {
+  height: 30px;
+  width: 160px;
+  border-radius: 3px;
+  color: #11455D;
+  background-color: #ffffff;
+  padding: 5px;
+}

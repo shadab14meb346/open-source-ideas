@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
+
+:root {
+  --main-color: rgb(20, 29, 167);
+  ;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(224, 222, 222);
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container1 h3 {
+  font-family: "Tangerine";
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 1000;
+  letter-spacing: 0.15em;
+  /* line-height: 1.45; */
+}
+
+.authentication {
+  display: flex;
+  justify-content: space-between;
+}
+
+.authentication button {
+  background: none;
+  border: none;
+  font-family: "Graphik Meetup", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, .54);
+}
+
+.authentication button:hover {
+  cursor: pointer;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.logo:hover {
+  font-weight: bolder !important;
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.search-results {
+  display: flex;
+  flex-direction: column;
+  /* padding: 0.5rem; */
+  font-family: 'Poppins';
+  align-items: center;
+  width: 100%;
+  background: #FFFFFF;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #11455d;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.no-result {
+  display: flex;
+  justify-content: center;
+  color: red;
+  width: 100%;
+  background-color: #11455d;
+  font-weight: bolder;
+  font-size: 1.wrem;
+}
