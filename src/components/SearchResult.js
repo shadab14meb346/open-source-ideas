@@ -159,26 +159,19 @@ function SearchResults({
 			.then((response) => response.json())
 			.then((data) => {
 				const requestsBodyToHtml = data.map((item) => {
-					const url = "https://api.github.com/markdown";
+					const url = "https://guarded-everglades-03878.herokuapp.com/markdown";
 					return axios({
 						method: "POST",
 						url,
-						headers: {
-							"Access-Control-Allow-Origin": "http://localhost:3000",
-							Authorization: `token ${TOKEN}`,
-							"Content-Type": "application/json",
-						},
 						data: {
-							text: item.body,
-							mode: "gfm",
-							context: "github/gollum",
+							markdownText: item.body,
 						},
 					});
 				});
 				axios.all(requestsBodyToHtml).then((responses) => {
 					setLoading(false);
 					data = data.map((item, index) => {
-						item.bodyInHTML = responses[index].data;
+						item.bodyInHTML = responses[index].data.data;
 						return item;
 					});
 					let responseData = convertToJSON(data);

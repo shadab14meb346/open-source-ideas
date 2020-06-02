@@ -27,8 +27,10 @@
 	line-height: 1.5rem;
 	font-family: "Poppins", sans-serif;
 	font-weight: normal;
-	font-size: 15px;
+	font-size: 1rem;
 	margin-top: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .title {
@@ -49,7 +51,7 @@ img {
 .title h1 {
 	color: #11455d;
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 2rem;
 	/* line-height: 3em; */
 	margin: 0;
 	/* border: 1px solid black; */
@@ -58,6 +60,7 @@ img {
 .tag {
 	display: flex;
 	margin-top: 5px;
+	flex-wrap: wrap;
 	/* justify-content: space-around; */
 }
 
@@ -93,4 +96,25 @@ img {
 }
 .project-description h2 {
 	margin-top: 20px;
+}
+
+code {
+	white-space: pre-line;
+
+}
+
+h1 {
+	white-space: pre-line;
+
+}
+
+pre {
+	white-space: pre-line;
+
+}
+
+@media only screen and (max-width: 640px) {
+	.card-inner {
+		width: 100%;
+	}
 }

@@ -90,7 +90,7 @@ function FilterComponent() {
 		});
 	}
 	return (
-		<div>
+		<>
 			<div className='container'>
 				<div className='input'>
 					{/* <label>Relevant Technology</label>
@@ -155,7 +155,7 @@ function FilterComponent() {
 				perPage={perPage}
 				showPagination={showPagination}
 			/>
-		</div>
+		</>
 	);
 }
 
